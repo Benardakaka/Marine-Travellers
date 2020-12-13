@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+
+{% block content %}
+<style>
+    body{
+      background-color: maroon;
+    }
+    .card-img{
+      width: 90%;
+      margin:0 auto;
+      text-align: center;
+    }
+  
+    .card-img img{
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .card-body{
+      min-height: 25vh;
+      position: relative;
+    }
+  </style>
+<div class="container">
+    <div class="row">
+        <!-- displaying  Ridername-->
+        
+        <div class="col-md-4">
+            <h3> {{rider.ridername| capitalize}} </h3>
+
+            <!--Displaying user bio-->
+            {% if rider.bio %}
+            <p> {{rider.bio}}</p>
+            {%else%}
+            <p> {{rider.ridername| capitalize}} has no bio </p>
+            {% endif %}
+
+            {% if rider == current_rider %}
+            <a href="{{url_for('main.update_profile2',uname=rider.ridername)}}">Edit profile</a>
+            {% endif %}
+        </div>
+
+        <!--Display profile photo-->
+        <div class="col-md-4">
+            {% if rider.profile_pic_path %}
+        
+            <img src="{{url_for('static',filename=rider.profile_pic_path)}}" alt="" class="img-thumbnail">
+        
+            {%else%}
+            <p>No profile picture</p>
+        
+            {% endif %}
+        
+                {% if rider == current_rider %}
+            <form  action="{{url_for('main.update_pic2',uname=rider.ridername)}}" method="post" enctype = "multipart/form-data">
+        
+              <input type="file"  name="photo" class="form-control" required>
+              <input type="submit">
+            </form>
+              {% endif %}
+          </div>
+        
+    </div>
+</div>
+<br>
+  <footer class="footer mt-4">
+    <div class="social-icons">
+      <i class="fa fa-2x fa-facebook"></i>
+      <i class="fa fa-2x fa-twitter"></i>
+      <i class="fa fa-2x fa-instagram"></i>
+    </div>
+    <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
+  </footer>
+  {% endblock %}

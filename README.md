@@ -55,7 +55,7 @@ To fix a bug or enhance an existing module, follow these steps:
 ## License 
 [MIT](https://github.com/Benardakaka/Marine-Travellers/master/LICENSE.md)
 
- © [Benard-Akaka]Scram master(https://github.com/Benardakaka)
+ © [Benard-Akaka]:Scram master:(https://github.com/Benardakaka)
 
 
 
