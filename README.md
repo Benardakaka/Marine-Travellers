@@ -1,11 +1,11 @@
 # MARINE TRAVELLERS
 
 ## Authors
-* Benard Akaka[Scram-Master]
-* Philipia Eveline[collaborator]
-* Fridah Alwangah[collaborator]
-* Ian Baraka[collaborator]
-* Towett Enock[collaborator]
+* Benard Akaka [Scram-Master]
+* Philipia Eveline [collaborator]
+* Fridah Alwangah [collaborator]
+* Ian Baraka [collaborator]
+* Towett Enock [collaborator]
 
 <table>
 <tr>
