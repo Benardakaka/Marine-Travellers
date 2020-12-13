@@ -1,7 +1,7 @@
 # MARINE TRAVELLERS
 
 ## Authors
-* Benard Akaka [Scram-Master]
+### Benard Akaka [Scram-Master]
 * Philipia Eveline [collaborator]
 * Fridah Alwangah [collaborator]
 * Ian Baraka [collaborator]
