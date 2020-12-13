@@ -1,11 +1,11 @@
 # MARINE TRAVELLERS
 
 ## Authors
-* Benard Akaka
-* Philipia Eveline
-* Fridah Alwangah
-* Ian Baraka
-* Towett Enock
+* Benard Akaka[Scram-Master]
+* Philipia Eveline[collaborator]
+* Fridah Alwangah[collaborator]
+* Ian Baraka[collaborator]
+* Towett Enock[collaborator]
 
 <table>
 <tr>
@@ -54,7 +54,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## License 
 [MIT](https://github.com/Benardakaka/Marine-Travellers/master/LICENSE.md)
-
+Scram master
  © [Benard Akaka](https://github.com/Benardakaka)
 
 
