@@ -1,0 +1,3 @@
+Hello {{rider.ridername}}
+Your credentials are okay.
+We have just seen you have signed up for the application and want to welcome you to the family.
