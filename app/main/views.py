@@ -28,7 +28,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    title = 'Home - Safe Boda  website'
+    title = 'Home - Marine-Travellers'
     content = "WELCOME TO MARINE TRAVELLERS"
     quote = get_quote()
 
