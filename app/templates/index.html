@@ -1,18 +1,40 @@
 {% extends 'base.html' %}{% block styles%} {{ super() }}
-<link
+<!-- <link
   rel="stylesheet"
   href="{{url_for('static',filename='css/index.css')}}"
   type="text/css"
-/>
+/> -->
 {% endblock styles%}
 <!-- Content block -->
 {% block content %}
-<div class="jumbotron">
+<div class="container-fluid">
+  <span
+  style="
+    font-size: 100px;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+  "
+  class="text-primary"
+  ><p>
+    <marquee
+      behaviour="scroll"
+      width="1300px"
+      height="px"
+      color="white"
+      style="color: crimson; font-size: larger"
+    >
+      <strong
+        ><i
+          ><b>Hello, "Welcome to Marine-Travellers</b></i
+        ></strong
+      ></marquee
+    ><link rel="stylesheet" href="" /></p
+></span>
   <div class="text-center">
     <img
       style="width: 100%; height: 88vh; object-fit: cover"
-      src="{{url_for('static', filename='images/marine-port.jpg')}}"
-    />
+      src="{{url_for('static', filename='images/marine-port.jpg')}}"/>
+     
     <div class="text-content"></div>
   </div>
 </div>

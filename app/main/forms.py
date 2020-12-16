@@ -11,9 +11,9 @@ class CommentForm(FlaskForm):
 
 class RiderForm(FlaskForm):
     email = StringField('Your Email Address',validators=[Required(),Email()])
-    ridername = StringField('Enter your ridername',validators = [Required()])
+    ridername = StringField('Enter your Name',validators = [Required()])
     number_plate = StringField('Your number_plate',validators =[Required()])
-    motor_model = StringField('Your motor_model',validators =[Required()])
+    motor_model = StringField('Your ship_model',validators =[Required()])
     password = PasswordField('Password',validators = [Required(), EqualTo('password_confirm',message = 'Passwords must match')])
     password_confirm = PasswordField('Confirm Passwords',validators = [Required()])
     submit = SubmitField('Upload')
@@ -24,7 +24,7 @@ class RiderForm(FlaskForm):
 
     def validate_ridername(self,data_field):
         if User.query.filter_by(ridername = data_field.data).first():
-            raise ValidationError('That ridername is taken')
+            raise ValidationError('That Name is taken')
         
 class UpdateProfile(FlaskForm):
     bio = TextAreaField('Say something about yourself',validators=[Required()])
