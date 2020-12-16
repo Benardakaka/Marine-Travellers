@@ -8,7 +8,6 @@ body {
   * Formatting the header area
   */
   header {
-  background-color: #DFB887;
   height: 35px;
   width: 100%;
   opacity: .9;
@@ -17,12 +16,12 @@ body {
   header h1.logo {
   margin: 0;
   font-size: 1.7em;
-  color: #fff;
+
   text-transform: uppercase;
   float: left;
   }
+
   header h1.logo:hover {
-  color: #fff;
   text-decoration: none;
   }
   /*
@@ -34,14 +33,12 @@ body {
   }
   div.home {
   padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   }
   div.about {
   padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
