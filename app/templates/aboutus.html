@@ -1,133 +1,101 @@
 {% extends 'base.html' %}{% block styles%}
 {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css">
+<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css"> -->
 {% endblock styles%}
 <!-- Content block -->
 {% block content %}
-<style>
-  .parallax {
-    /* The image used */
-    background-image: url("../static/images/drivers.jpg");
-
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #Do {
-    font-family: 'Inconsolata', serif;
-    text-align: center;
-    padding-top: 40px;
-  }
-
-  .Do .headings {
-    padding-bottom: 38px;
-  }
-</style>
 
 <div class="parallax"></div>
 
-<div class="container" id="Do" style="background-color: cornflowerblue;">
+<div class="container-fluid" id="Do" style="background-color: cornflowerblue;">
   <div class="text-center" style="background-color: cornflowerblue;">
-    <h1 style="float: center; font-weight: bold; font-size: 40px;"><b><i>WHAT ABOUT US</i></b></h1>
-    <p style="float: center; font-size: 20px; font-family: 'Times New Roman', Times, serif;">Marine-Travellers is a community of
-      entrepreneurs and captains is revolutionizing transportation, payments, and on-demand services</br>
-      Africa’s cities and believes that everyone in African cities should have access to affordable services at a click
-      of a button.</p>
+    <h1 style="float: center; font-weight: bold; font-size: 40px;"><b><i>SERVICES</i></b></h1>
+   
   </div>
+
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div id="development-image">
-        <img src="../static/images/safe.jpeg" style="width: 350px; height: 266px;">
+        <img src="../static/images/safe.jpeg" style="width: 320px; height: 266px;">
       </div>
       <h2 class="title">WATER SAFETY</h2>
       <p>Captains are trained on how to handle an emergecy while on water</p>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div id="development-image">
-        <img src="../static/images/rider.jpg" style="width: 350px; height: 266px;">
+        <img src="../static/images/rider.jpg" style="width: 320px; height: 266px;">
+        <h2 class="title"><b>Convenient</b></h2>
+        <p>Forget the long lines and confusion associated with finding transportation from the many Boston</p>
       </div>
 
-      <div class="container-fluid">
-      <h2 class="title"><b>FARE MANAGEMENTS</b></h2>
+      </div>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th><b>COUNTRIES</b></th>
-        <th><b>DEPERTURE</b></th>
-        <th><b>ARRIVAL</b></th>
-        <th><b>FROM</b></th>
-        <th><b>TO</b></th>
-        <th><b>FARE</b></th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr class="table-primary" style="color: brown;">
-        <td><b>KENYA :</b></td>
-        <td><i>10 am & 4 pm</i></td>
-        <td><i>Variable</i></td>
-        <td><i>Mombasa</i></td>
-        <td><i>Asian</i></td>
-        <td><i>Negotiable</i></td>
-      </tr> 
+      <div class="col-md-3">
+        <div id="development-image">
+          <img src="../static/images/capt.webp" style="width: 320px; height: 266px;">
+          <h2 class="title"><b>Teachings</b></h2>
+          <p>Basic skill be tought here</p>
+        </div>
+  
+        </div>
 
-
-      <tr class="table-primary" style="color: brown;">
-        <td><b> DJIBOUTI :</b></td>
-        <td><i>10 am & 4 pm</i></td>
-        <td><i>Variable</i></td>
-        <td><i> Djibouti</i></td>
-        <td><i>Asian</i></td>
-        <td><i>Negotiable</i></td>
-      </tr> 
-
+        <div class="col-md-3">
+          <div id="development-image">
+            <img src="../static/images/aid.jpeg" style="width: 320px; height: 266px;">
+            <h2 class="title"><b>First aid</b></h2>
+            <p> When you provide basic medical care to someone experiencing a sudden injury or
+               illness, it's known as first aid.</p>
+          </div>
     
-      <tr class="table-primary" style="color: brown;">
-        <td><b>IVORY COAST :</b></td>
-        <td><i>10 am & 4 pm</i></td>
-        <td><i>Variable</i></td>
-        <td><i>Abidjan</i></td>
-        <td><i>Asian</i></td>
-        <td><i>Negotiable</i></td>
-      </tr> 
+          </div>
 
-      <tr class="table-primary" style="color: brown;">
-        <td><b>S.AFRICA :</b></td>
-        <td><i>11 am & 9 pm</i></td>
-        <td><i>Variable</i></td>
-        <td><i> Durban</i></td>
-        <td><i>Asian</i></td>
-        <td><i>Negotiable</i></td>
-      </tr> 
-
-    </tbody>
-  </table>
-  <button class="btn btn-primary"><b><i>SEE MORE ON PAGE NEXT</i></b></button>
-</div>
     </div>
-
-    <div class="col-md-4">
+   
+   <div class="row">
+    <div class="col-md-3">
       <div id="development-image">
-        <img src="../static/images/mombasa.jpg" style="width: 350px; height: 266px;">
+        <img src="../static/images/food.jpeg" style="width: 320px; height: 266px;">
       </div>
-      <h2 class="title">Convenient</h2>
-      <p>Top up your Cashless using mobile money and go cashless</p>
+      <h2 class="title"><b>Food and Beddings</b></h2>
+      <p>The procurement of food </p>
     </div>
+
+    <div class="col-md-3">
+      <div id="development-image">
+        <img src="../static/images/repair.jpeg" style="width: 320px; height: 266px;">
+      </div>
+      <h2 class="title"><b>Repair works</b></h2>
+      <p>Vessel repair involves a lot of practical jobs and logistics challenges. We have the in-house
+        expertise to provide all the services needed for a smooth operation.</p>
+    </div>
+
+    <div class="col-md-3">
+      <div id="development-image">
+        <img src="../static/images/package.jpg" style="width: 320px; height: 266px;">
+      </div>
+      <h2 class="title"><b>Passage service</b></h2>
+      <p>Near the Danish straits we offer a wide range of passage related services such as launch boat 
+        deliveries, diving inspections and tank cleaning including disposal of washing water.</p>
+    </div>
+
+   
+    <div class="col-md-3">
+      <div id="development-image">
+        <img src="../static/images/crew.jpeg" style="width: 320px; height: 266px;">
+      </div>
+      <h2 class="title"><b>Crew change</b></h2>
+      <p>From a shipowner’s point of view, Denmark has some of the most favorable immigration rules 
+        in Europe.</p>
+    </div>
+  </div>
   </div>
 </div>
 
 <div class="container" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-size: 15px;">
 
   <img src="../static/images/ships.png"
-    style="float:right; width: 350px; height: 210px; margin-top: 30px; margin-right: 100px;">
+    style="float:right; width: 320px; height: 210px; margin-top: 30px; margin-right: 100px;">
 
   <h1>Our Marine Captains</h1>
   <p>Our community of Marine-Travellers all receive extensive training to make them</br>

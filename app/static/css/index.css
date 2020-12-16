@@ -21,7 +21,6 @@ a {
 }
 
 .navbar {
-    background-color: white;
     color: black;
     border-radius: 0;
     margin: 0 !important;
@@ -91,7 +90,6 @@ h1 {
         line-height: 1;
         float: right;
         background-color: #0a0a0a;
-        color: white;
         box-shadow: 0 0.2rem 0.5rem rgba(103, 110, 144, .2), 0 0 0 0.1rem rgba(103, 110, 144, .05);
     }
 }
@@ -110,9 +108,9 @@ h1 {
         margin-right: 5%;
     }
 }
-body{
+/* body{
     background-color: bisque;
-}
+} */
 
 .image img{
     height: 200px;
