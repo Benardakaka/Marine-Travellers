@@ -30,12 +30,12 @@
 
                         <div class="card image" style="width: 28rem;" style="height: 50px;">
                             <div class="card-body ">
-                                <h5 class="card-title">Safe boda</h5>
+                                <h5 class="card-title">Marine-Travellers</h5>
                                 <img src="{{url_for('static', filename='images/ships.jpg')}}" class="card-img-top" alt="Profile" height="10">
                                 <h6 class="subtitle">Rider:~{{rider.ridername}}</h5>
                                 </h6>
                                 <h5 class="subtitle">Number plate~ {{rider.number_plate}}</h5>
-                                <h5 class="subtitle"> Motorbike_model~{{rider.motorbike_model}}</h5>
+                                <h5 class="subtitle"> ship_model~{{rider.ship_model}}</h5>
                                 <a href="{{url_for('main.new_booking')}}" class="card-link">Make Booking</a>
                             </div>
                         </div>
@@ -47,13 +47,16 @@
         </div>
     </div>
 </div>
-<br>
-<footer class="footer mt-4">
-    <div class="social-icons">
-        <i class="fa fa-2x fa-facebook"></i>
-        <i class="fa fa-2x fa-twitter"></i>
-        <i class="fa fa-2x fa-instagram"></i>
-    </div>
-    <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
+
+
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer mt-4" style="background-color: blue;text-align: center;padding: 1em;">
+  <div class="social-icons">
+    <i class="fa fa-2x fa-facebook"></i>
+    <i class="fa fa-2x fa-twitter"></i>
+    <i class="fa fa-2x fa-instagram"></i>
+  </div>
+  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
 </footer>
+
 {% endblock %}

@@ -181,6 +181,12 @@ def thankyou():
 
     return render_template('thankyou.html',quote=quote)
 
+@main.route('/about_us')
+def about_us():
+
+    return render_template('about_us.html')
+
+
 @main.route('/rider/all', methods=['GET', 'POST'])
 @login_required
 def riders():

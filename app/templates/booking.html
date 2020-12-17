@@ -3,7 +3,7 @@ styles%} {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
 {% endblock %} {% block content %}
 <div class="container-fluid">
-  <div class="jumbotron">
+  <div class="ben">
     <div class="row">
       <div class="col-md-4 pt-3">
         <div class="card" style="position: relative">
@@ -31,14 +31,14 @@ styles%} {{ super() }}
   </div>
 </div>
 <br />
-<footer class="footer mt-4">
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer mt-4" style="background-color: blue;text-align: center;padding: 1em;">
   <div class="social-icons">
     <i class="fa fa-2x fa-facebook"></i>
     <i class="fa fa-2x fa-twitter"></i>
     <i class="fa fa-2x fa-instagram"></i>
   </div>
-  <p class="text-center pt-2">
-    Copyright &copy; 2020 Design by Marine-Travellers
-  </p>
+  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
 </footer>
+
 {% endblock %}

@@ -2,7 +2,7 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 {% block styles%}
 {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> -->
 {% endblock %}
 
 
@@ -62,13 +62,14 @@
 
     </div>
 </div>
-<br>
-  <footer class="footer mt-4">
-    <div class="social-icons">
-      <i class="fa fa-2x fa-facebook"></i>
-      <i class="fa fa-2x fa-twitter"></i>
-      <i class="fa fa-2x fa-instagram"></i>
-    </div>
-    <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
-  </footer>
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer mt-4" style="background-color: blue;text-align: center;padding: 1em;">
+  <div class="social-icons">
+    <i class="fa fa-2x fa-facebook"></i>
+    <i class="fa fa-2x fa-twitter"></i>
+    <i class="fa fa-2x fa-instagram"></i>
+  </div>
+  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
+</footer>
+
 {% endblock %}

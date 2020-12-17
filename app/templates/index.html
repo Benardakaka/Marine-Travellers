@@ -1,28 +1,49 @@
 {% extends 'base.html' %}{% block styles%} {{ super() }}
-<link
-  rel="stylesheet"
-  href="{{url_for('static',filename='css/index.css')}}"
-  type="text/css"
-/>
+
 {% endblock styles%}
 <!-- Content block -->
 {% block content %}
-<div class="jumbotron">
+<div class="container-fluid">
+ 
   <div class="text-center">
+    <span
+    style="
+      font-size: 100px;
+      font-family: 'Special Elite', cursive;
+      text-align: center;
+    "
+    class="text-primary"
+    ><p>
+      <marquee
+        behaviour="scroll"
+        width="1300px"
+        height="px"
+        color="white"
+        style="color: crimson; font-size: larger"
+      >
+        <strong
+          ><i
+            ><b>Hello, "Welcome to Marine-Travellers</b></i
+          ></strong
+        ></marquee
+      ><link rel="stylesheet" href="" /></p
+  ></span>
     <img
       style="width: 100%; height: 88vh; object-fit: cover"
-      src="{{url_for('static', filename='images/marine-port.jpg')}}"
-    />
+      src="{{url_for('static', filename='images/marine-port.jpg')}}"/>
+     
     <div class="text-content"></div>
   </div>
 </div>
 
-<footer class="footer mt-4">
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer mt-4" style="background-color: blue;text-align: center;padding: 1em;">
   <div class="social-icons">
     <i class="fa fa-2x fa-facebook"></i>
     <i class="fa fa-2x fa-twitter"></i>
     <i class="fa fa-2x fa-instagram"></i>
   </div>
-  <p class="text-center pt-2">Copyright &copy; 2020 Design Marine-Travellers</p>
+  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
 </footer>
+
 {% endblock %}
