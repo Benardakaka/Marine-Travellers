@@ -1,7 +1,7 @@
 {% import "bootstrap/wtf.html" as wtf %}
 {% extends 'base.html'%}
 {% block styles%} {{ super() }}
-<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
 
 {% block content %}
@@ -30,17 +30,17 @@
                   </div>
                 </div>
 
-                <h3 class="text-center">LEAVE A REVIEW HERE</h3>
-                {{ wtf.quick_form(comment_form) }}
+                <h3 class="text-center">LEAVE YOUR FEEDBACK HERE</h3>
+                {{ wtf.quick_form(feedback_form) }}
               </div>
             </div>
 
           </div>
           <div class="col-md-6">
             <h2>Testimonials</h2>
-            {%for comments in comments%}
-           <p> {{comments.comment}}</p> 
-            <p>Posted on~{{comments.date}}</p>
+            {%for feedbacks in feedbacks%}
+           <p> {{feedback.feedback}}</p> 
+            <p>Posted on~{{feedback.date}}</p>
             <hr>
             <hr>
             
@@ -60,7 +60,7 @@
     <i class="fa fa-2x fa-twitter"></i>
     <i class="fa fa-2x fa-instagram"></i>
   </div>
-  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine-Travellers</p>
+  <p class="text-center pt-2">Copyright &copy; 2020 Design by Marine travellers</p>
 </footer>
 
 {% endblock %}
